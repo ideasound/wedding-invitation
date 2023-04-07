@@ -9,20 +9,17 @@
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f7f7f7;
         }
         .hero {
-            background-image: url("image/el_capitan.jpg");
+            background-image: url("image/el-capitan.jpg");
             background-size: cover;
             background-position: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .title, .subtitle {
-            color: #ffffff;
-        }
         .section {
             padding-top: 3rem;
             padding-bottom: 3rem;
+            background-color: #fef9f3;
         }
         .profile-image {
             border-radius: 50%;
@@ -33,14 +30,25 @@
             padding: 1rem;
             background-color: #f5e9e2;
         }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
     <section class="hero is-medium">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">청첩장</h1>
-                <h2 class="subtitle">OO 결혼식장에 초대합니다</h2>
+                <h1 class="title fade-in">청첩장</h1>
+                <h2 class="subtitle fade-in">OO 결혼식장에 초대합니다</h2>
             </div>
         </div>
     </section>
@@ -79,5 +87,4 @@
     </footer>
 </body>
 </html>
-
 
