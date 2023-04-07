@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청첩장</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- 여기에 청첩장 내용을 작성하세요. -->
+<!-- index.html -->
+<div id="rsvp-container" class="box">
+    <h2 class="title is-3">RSVP</h2>
+    <form id="rsvp-form">
+        <div class="field">
+            <label for="name" class="label">이름:</label>
+            <div class="control">
+                <input type="text" id="name" class="input" required>
+            </div>
+        </div>
+        <div class="field">
+            <label for="email" class="label">이메일:</label>
+            <div class="control">
+                <input type="email" id="email" class="input" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button type="submit" class="button is-primary">제출</button>
+            </div>
+        </div>
+    </form>
+    <div id="message" class="notification is-success" hidden></div>
+</div>
+
+</body>
+</html>
+
