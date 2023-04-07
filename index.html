@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>청첩장</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .subtitle {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-    <section class="hero is-medium is-primary is-bold">
+    <section class="hero is-medium has-background-primary-light">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">청첩장</h1>
@@ -20,10 +29,17 @@
     <section class="section">
         <div class="container">
             <div class="columns is-centered">
-                <div class="column is-5">
+                <div class="column is-5 has-text-centered">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img src="image/profile.png" alt="신랑 사진">
+                    </figure>
                     <h3 class="title is-3">신랑: 홍길동</h3>
+                </div>
+                <div class="column is-5 has-text-centered">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img src="image/profile2.jpeg" alt="신부 사진">
+                    </figure>
                     <h3 class="title is-3">신부: 김영희</h3>
-                    <p class="subtitle is-5">저희 두 사람의 행복한 시작을 축하해 주시기 바랍니다.</p>
                 </div>
             </div>
             <div class="columns is-centered">
