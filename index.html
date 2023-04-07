@@ -6,8 +6,9 @@
     <title>Wedding Invitation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
-	body {
+        body {
             font-family: 'Roboto', sans-serif;
             background-color: #f7f7f7;
         }
@@ -18,7 +19,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .title, .subtitle {
-            color: #000;
+            color: #ffffff;
         }
         .section {
             padding-top: 3rem;
@@ -35,8 +36,8 @@
         }
         .subtitle {
             color: #000000;
-        }    
-</style>
+        }
+    </style>
 </head>
 <body>
     <section class="hero is-medium">
@@ -55,7 +56,7 @@
                     <figure class="image is-128x128 profile-image">
                         <img src="image/profile.png" alt="Groom's Photo">
                     </figure>
-                    <h3 class="title is-3">Groom: John Doe</h3>
+                    <h3 class="title is-3">
                 </div>
                 <div class="column is-5 has-text-centered">
                     <figure class="image is-128x128 profile-image">
@@ -68,8 +69,33 @@
                 <div class="column is-5">
                     <h4 class="title is-4">Date: December 25, 2023</h4>
                     <h4 class="title is-4">Time: 2 PM</h4>
-                    <h4 class="title is-4">Venue: OO Wedding Hall</h4>
-                    <p class="subtitle is-6">Address: 123 OO Street, Gangnam District, Seoul</p>
+                    <h4 class="title is-4">Venue: Ladomus Wedding Hall</h4>
+                    <h4 class="title is-4">Address: 1234 Wedding St, City, Country</h4>
+                    <h4 class="title is-4">Dress Code: Formal</h4>
+                </div>
+                <div class="column is-5">
+                    <h4 class="title is-4">Message from the couple:</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod dolor et nulla aliquet, vel varius turpis tincidunt. Sed et odio bibendum, commodo nulla sit amet, ultricies purus. Sed laoreet commodo sapien, nec elementum arcu vestibulum ut. Vestibulum vehicula ipsum odio, a auctor velit malesuada id. Pellentesque imperdiet euismod metus, quis tincidunt metus vehicula quis. Morbi feugiat gravida diam, a lobortis velit malesuada quis. Praesent porta metus eget nunc feugiat, id finibus dolor lacinia. Sed suscipit turpis vel eros aliquam porttitor. Vivamus dignissim purus eget justo ultricies, sit amet consequat odio eleifend. Praesent malesuada eu sapien id dapibus. Proin vulputate velit ex, ac blandit ipsum hendrerit ut. Donec at augue in est dapibus eleifend.</p>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-10">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="image/1.jpg" alt="Wedding Photo 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/2.jpg" alt="Wedding Photo 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="image/3.jpg" alt="Wedding Photo 3">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,9 +103,30 @@
     
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>We would be honored by your presence.</p>
+            <p>Copyright © 2023 - 
+
+            </p>
         </div>
     </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 </html>
 
