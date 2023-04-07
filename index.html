@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>청첩장</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- 여기에 청첩장 내용을 작성하세요. -->
-<!-- index.html -->
-<div id="rsvp-container" class="box">
-    <h2 class="title is-3">RSVP</h2>
-    <form id="rsvp-form">
-        <div class="field">
-            <label for="name" class="label">이름:</label>
-            <div class="control">
-                <input type="text" id="name" class="input" required>
+    <section class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">청첩장</h1>
+                <h2 class="subtitle">OO 결혼식장에 초대합니다</h2>
             </div>
         </div>
-        <div class="field">
-            <label for="email" class="label">이메일:</label>
-            <div class="control">
-                <input type="email" id="email" class="input" required>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-5">
+                    <h3 class="title is-3">신랑: 홍길동</h3>
+                    <h3 class="title is-3">신부: 김영희</h3>
+                    <p class="subtitle is-5">저희 두 사람의 행복한 시작을 축하해 주시기 바랍니다.</p>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-5">
+                    <h4 class="title is-4">날짜: 2023년 12월 25일</h4>
+                    <h4 class="title is-4">시간: 오후 2시</h4>
+                    <h4 class="title is-4">장소: OO 결혼식장</h4>
+                    <p class="subtitle is-6">주소: 서울특별시 강남구 OO로 123</p>
+                </div>
             </div>
         </div>
-        <div class="field">
-            <div class="control">
-                <button type="submit" class="button is-primary">제출</button>
-            </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>많은 축하 부탁드립니다.</p>
         </div>
-    </form>
-    <div id="message" class="notification is-success" hidden></div>
-</div>
-
+    </footer>
 </body>
 </html>
 
