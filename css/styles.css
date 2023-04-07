@@ -1,0 +1,25 @@
+/* styles.css */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5e7e1;
+    color: #3a3a3a;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #8c4b26;
+}
+
+#rsvp-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.notification.is-success {
+    margin-top: 1rem;
+}
+
