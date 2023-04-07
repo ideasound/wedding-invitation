@@ -1,0 +1,34 @@
+# Node.js 관련
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 로그 파일
+logs/
+*.log
+*.log.*
+
+# 에디터 및 IDE 관련
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.sublime-*
+*.iml
+
+# 빌드 및 캐시 파일
+dist/
+build/
+.cache/
+.cache-loader/
+next/
+.nuxt/
+*.map
+
+# 운영체제 관련
+.DS_Store
+Thumbs.db
+
